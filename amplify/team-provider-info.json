@@ -15,6 +15,9 @@
       "auth": {
         "reminderamplify82a5fbce": {},
         "reminderamplifya628e454": {}
+      },
+      "api": {
+        "reminderamplify": {}
       }
     }
   }
