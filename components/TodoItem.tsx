@@ -8,8 +8,8 @@ interface Props {
 const TodoItem = ({ title, description }: Props) => {
   return (
     <View style={styles.container}>
-      <Text>{title}</Text>
-      {description && <Text>{description}</Text>}
+      <Text style={styles.title}>{title}</Text>
+      {description && <Text style={styles.description}>{description}</Text>}
     </View>
   );
 };
@@ -20,13 +20,13 @@ const styles = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
     gap: 8,
-    backgroundColor: '#fff',
-    borderRadius: 4,
-    border: '1px solid #eee',
+    padding: 16,
     fontSize: 12,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: '#eee',
+    backgroundColor: '#fff',
   },
   title: {
     fontWeight: 'bold',
